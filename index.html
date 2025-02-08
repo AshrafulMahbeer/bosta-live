@@ -28,8 +28,7 @@
         }
         .card {
             background: white;
-            width: 80%;
-            max-width: 800px;
+            width: 60%;
             margin: 50px auto;
             padding: 20px;
             border-radius: 10px;
@@ -67,6 +66,20 @@
         .contact a:hover {
             text-decoration: underline;
         }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 600px) {
             .card {
                 flex-direction: column;
@@ -89,11 +102,14 @@
         <img src="doctor.jpg" alt="Dr. Sazzad Hossain Bhuiyan">
         <div class="card-content">
             <h2>Dr. Sazzad Hossain Bhuiyan</h2>
-            <p><strong>Qualification:</strong> BHMS, MD (Homeopathy)</p>
-            <p><strong>Experience:</strong>Experimental text by Ashraful</p>
-            <p><strong>Specialization:</strong>Experimental text by Ashraful</p>
+            <p><strong>Qualification:</strong> Example</p>
+            <p><strong>Experience:</strong> Example</p>
+            <p><strong>Specialization:</strong> Example</p>
             <p class="contact">Contact: <a href="tel:+1234567890">+123 456 7890</a></p>
-            <p class="contact">Email: <a href="example">exmample</a></p>
+            <p class="contact">Email: <a href="mailto:dr.johndoe@example.com">dr.johndoe@example.com</a></p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/shazzad.bhuiyan.7" target="_blank">Facebook</a>
+            </div>
         </div>
     </div>
 </body>
