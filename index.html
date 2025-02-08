@@ -18,15 +18,37 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .logo {
+            height: 50px;
         }
         .card {
             background: white;
-            width: 70%;
+            width: 80%;
+            max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
             text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-content {
+            flex: 1;
         }
         .card h2 {
             color: #2c3e50;
@@ -37,20 +59,42 @@
             font-size: 16px;
             color: #555;
         }
-        .contact {
-            margin-top: 10px;
-            font-weight: bold;
+        .contact a {
+            text-decoration: none;
             color: #e74c3c;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .card img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo" class="logo">
         Professor Homeo Hall
     </header>
     <div class="card">
-        <h2>Dr. Sazzad Hossain Bhuiyan</h2>
-        <p><strong>Qualification:</strong> BHMS, MD (Homeopathy)</p>
+        <img src="doctor.jpg" alt="Dr. Sazzad Hossain Bhuiyan">
+        <div class="card-content">
+            <h2>Dr. Sazzad Hossain Bhuiyan</h2>
+            <p><strong>Qualification:</strong> BHMS, MD (Homeopathy)</p>
+            <p><strong>Experience:</strong>Experimental text by Ashraful</p>
+            <p><strong>Specialization:</strong>Experimental text by Ashraful</p>
+            <p class="contact">Contact: <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p class="contact">Email: <a href="example">exmample</a></p>
+        </div>
     </div>
 </body>
 </html>
